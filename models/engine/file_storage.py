@@ -4,7 +4,6 @@ The FileStorage module file.
 """
 import json
 from os import path
-from models.base_model import BaseModel
 
 
 class FileStorage:
@@ -34,7 +33,8 @@ class FileStorage:
         Sets in `__objects` the new obj with key `<obj class name>.id`
 
         Attributes:
-            obj (instance): The object to add in the `__objects` class attribute.
+            obj (instance): The object to add in the `__objects` class
+                            attribute.
         """
         key = obj.__class__.__name__ + '.' + obj.id
         self.__objects[key] = obj

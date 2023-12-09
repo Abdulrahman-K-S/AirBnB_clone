@@ -10,14 +10,13 @@ from models.base_model import BaseModel
 
 
 class City(BaseModel):
-        """City Class
+    """class City
 
-    This is the City Class ...
+    This is the class City
 
     Attributes:
-        state_id (str): The UUID of the State the City belongs to
-        name (str): The City name
-
+        state_id (str): The UUID of the state the city belongs to.
+        name (str): The city name.
     """
-            state_id = ''
-                name = ''
+    state_id = ''
+    name = ''

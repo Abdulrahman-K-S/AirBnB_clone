@@ -97,7 +97,9 @@ based or not on the class name.
             print([str(objs[obj]) for obj in objs])
         elif class_name in self.allowed_classes:
             keys = objs.keys()
-            print([str(objs[key]) for key in keys if key.startswith(class_name)])
+            print([str(objs[key]) for key in keys if key.startswith(
+                class_name
+            )])
         else:
             print("** class doesn't exist **")
 

@@ -34,4 +34,3 @@ class Testreview(unittest.TestCase):
         """
         rev1 = Review()
         self.assertTrue(issubclass(rev1.__class__, BaseModel))
-x

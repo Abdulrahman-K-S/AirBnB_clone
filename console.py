@@ -201,6 +201,9 @@ by adding or updating attribute.
                 elif method_name == 'destroy':
                     class_id = splitted[2][1:-1]
                     self.do_destroy(class_name + ' ' + class_id)
+                elif method_name == 'update':
+                    class_id = splitted[2][1:-1]
+                    self.do_update(class_name + ' ' + class_id)
 
     def emptyline(self):
         """
